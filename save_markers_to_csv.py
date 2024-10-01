@@ -2,11 +2,11 @@ import bpy
 import csv
 import os
 
-#get file name without extension
-filename=bpy.path.display_name_from_filepath(bpy.data.filepath)
-
 #get absolute path
 currentfile = bpy.data.filepath
+
+#get file name without extension
+filename=bpy.path.display_name_from_filepath(currentfile)
 
 #get directory path
 filedir= os.path.dirname(currentfile)+'/'
